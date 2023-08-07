@@ -1,7 +1,5 @@
 # Upwork_JudgesUSACounties
 
-https://www.upwork.com/ab/proposals/1688481109474091009?success
-
 I am working on creating a website for my non-profit foundation. I have already started the site on Godaddy. This is going to be a somewhat complex project with multiple drop down boxes and selections.
 
 For example, my organization is going to cover Five states in the United States: California, Florida, Georgia, Colorado and New York.
