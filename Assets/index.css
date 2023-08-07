@@ -16,9 +16,88 @@ body {
 }
 
 .main {
-    width: 80%;
-    height: 80vh;
-    background: rgba(255, 255, 255, 0.596);
+    width: 85%;
+    height: 90vh;
+    background: rgba(235, 214, 214, 0.753);
     border-radius: 15px;
-    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 7%;
 }
+
+.gavel {
+    width: 100%;
+    height: 30vh;
+    background: url(./Images/gavel.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.gavel h1 {
+    color: rgb(231, 208, 208);
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 8%;
+    font-family: Times New Roman;
+    font-size: 4em;
+}
+
+.section {
+    /* background-color: black; */
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.section .nav {
+    float: left;
+    /* background-color: blue; */
+    width: 30%;
+    height: 60vh;
+    border-radius: 0px 0px 0px 15px;
+    /* position: relative; */
+    /* border: 1px solid black; */
+}
+
+.section .content {
+    float: right;
+    background-color: black;
+    width: 70%;
+    height: 60vh;
+    border-radius: 0px 0px 15px 0px;
+    /* position: relative; */
+}
+
+.section .nav h1 {
+    padding: 10%;
+}
+
+.section .nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 5% 5% 4% 5%;
+    /* position: absolute; */
+}
+
+@media (max-width: 700px) {
+    .section .nav ul li {
+        margin-left: 15px;
+        padding: 5% 5% 30% 5%;
+    }
+}
+
+@media (max-width: 925px) {
+    .section .nav ul li {
+        margin-left: 25px;
+        padding: 5% 5% 30% 5%;
+    }
+}
+
+/* 
+@media (max-width:400) {
+
+} */
