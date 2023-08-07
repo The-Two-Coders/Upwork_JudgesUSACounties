@@ -16,17 +16,24 @@
             margin-right: 15px;
             padding-right: 15px;
             font-size: 20px;
-            justify-items: center;
-            align-items: center;
+            text-align: center;
             
         }
+/* https://www.w3schools.com/howto/howto_custom_select.asp */
+/* https://www.freecodecamp.org/news/css-dropdown-guide-how-to-make-a-dropdown-menu-in-css/ */
+
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+        
     </style>
 </head>
 <body>
     <h1>California Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select name="calicounties" id="counties">
+    <select class="dropdown" name="calicounties" id="counties">
         <option value="Alameda">Alameda</option>
         <option value="Colusa">Colusa</option>
         <option value="Del Norte">Del Norte</option>
