@@ -11,17 +11,21 @@
             font-size: 50px;
         }
 
-        p {
+        .content {
             font-family: Cambria;
             margin-right: 15px;
             padding-right: 15px;
             font-size: 20px;
+            justify-items: center;
+            align-items: center;
+            
         }
     </style>
 </head>
 <body>
     <h1>California Counties</h1>
-    <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
+    <div class="content">
+        <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
     <select name="calicounties" id="counties">
         <option value="Alameda">Alameda</option>
         <option value="Colusa">Colusa</option>
@@ -40,5 +44,7 @@
         <option value="Ventura">Ventura</option>
     </select>
     <button>Fetch</button>
+    </div>
+    
 </body>
 </html>
