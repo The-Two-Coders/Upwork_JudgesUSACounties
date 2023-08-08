@@ -4,11 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>georframe</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Cambria;
+            font-size: 50px;
+        }
+
+        .content {
+            font-family: Cambria;
+            margin-right: 15px;
+            padding-right: 15px;
+            font-size: 20px;
+            text-align: center;
+            
+            
+        }
+/* https://www.w3schools.com/howto/howto_custom_select.asp */
+/* https://www.freecodecamp.org/news/css-dropdown-guide-how-to-make-a-dropdown-menu-in-css/ */
+
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+            
+        }
+
+        select {
+            width: 150px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Georgia</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque sit sapiente ducimus nisi nesciunt quidem vero, obcaecati voluptatum explicabo iure repellendus. Voluptatibus, ipsum velit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque sit sapiente ducimus nisi nesciunt quidem vero, obcaecati voluptatum explicabo iure repellendus. Voluptatibus, ipsum velit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque sit sapiente ducimus nisi nesciunt quidem vero, obcaecati voluptatum explicabo iure repellendus. Voluptatibus, ipsum velit.</p>
+    <h1>Georgia Counties</h1>
+    <div class="content">
+        <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
+    <select class="dropdown" name="calicounties" id="counties">
+        <option value="Alameda" selected>Select your County:</option>
+        <option value="Alameda">Alameda</option>
+        <option value="Colusa">Colusa</option>
+        <option value="Del Norte">Del Norte</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Madera">Madera</option>
+        <option value="Mendocino">Mendocino</option>
+        <option value="Mono">Mono</option>
+        <option value="Monterey">Monterey</option>
+        <option value="Nevada">Nevada</option>
+        <option value="Sacramento">Sacramento</option>
+        <option value="Sierra">Sierra</option>
+        <option value="Stanislaus">Stanislaus</option>
+        <option value="Tehama">Tehama</option>
+        <option value="Tulare">Tulare</option>
+        <option value="Ventura">Ventura</option>
+    </select>
+    <button>Fetch</button>
+    </div>
 </body>
 </html>
