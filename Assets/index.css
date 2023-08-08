@@ -27,7 +27,7 @@ body {
 
 .gavel {
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     background: url(./Images/gavel.jpg);
     background-size: cover;
     /* background-attachment: fixed; */
@@ -40,7 +40,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-top: 8%;
+    padding-top: 2%;
     font-family: Times New Roman;
     font-size: 4em;
 }
@@ -49,7 +49,7 @@ body {
     /* background-color: black; */
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -57,7 +57,7 @@ body {
     float: left;
     /* background-color: blue; */
     width: 30%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 0px 0px 0px 15px;
     /* position: relative; */
     /* border: 1px solid black; */
@@ -68,7 +68,7 @@ body {
     /* float: right; */
     /* background-color: black; */
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 0px 0px 15px 0px;
     /* position: relative; */
     justify-content: center;
