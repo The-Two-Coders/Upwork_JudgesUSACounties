@@ -39,25 +39,37 @@
     <h1>California Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select class="dropdown" name="calicounties" id="counties">
-        <option value="" selected>California Counties:</option>
-        <option value="Alameda">Alameda</option>
-        <option value="Colusa">Colusa</option>
-        <option value="Del Norte">Del Norte</option>
-        <option value="Los Angeles">Los Angeles</option>
-        <option value="Madera">Madera</option>
-        <option value="Mendocino">Mendocino</option>
-        <option value="Mono">Mono</option>
-        <option value="Monterey">Monterey</option>
-        <option value="Nevada">Nevada</option>
-        <option value="Sacramento">Sacramento</option>
-        <option value="Sierra">Sierra</option>
-        <option value="Stanislaus">Stanislaus</option>
-        <option value="Tehama">Tehama</option>
-        <option value="Tulare">Tulare</option>
-        <option value="Ventura">Ventura</option>
+    <select id="countyLink" class="dropdown" name="calicounties">
+        <option value="#" selected>California Counties:</option>
+        <option value="./../pages/california/alameda.html">Alameda</option>
+        <option value="./../pages/california/colusa.html">Colusa</option>
+        <option value="./../pages/california/delnorte.html">Del Norte</option>
+        <option value="./../pages/california/losangeles.html">Los Angeles</option>
+        <option value="./../pages/california/madera.html">Madera</option>
+        <option value="./../pages/california/mendocino.html">Mendocino</option>
+        <option value="./../pages/california/mono.html">Mono</option>
     </select>
-    <button>Fetch</button>
+    <a id="changeLink" href="./../pages/california/alameda.html" target="_blank">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the inputfield
+            const newUrl = countyLink.value;
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        })
+    </script>
+    
+    <!-- To get the correct url use the link text below: -->
+
+    <!-- <a href="./../pages/california/mono.html" target="_blank">To Establish Link</a> -->
     </div>
     
 </body>
