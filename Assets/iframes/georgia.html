@@ -48,16 +48,25 @@
         <option value="Bartow">Bartow</option>
         <option value="Bibb">Bibb</option>
         <option value="Bleckley">Bleckley</option>
-        <option value="Bulloch">Bulloch</option>
-        <option value="Butts">Butts</option>
-        <option value="Calhoun">Calhoun</option>
-        <option value="Camden">Camden</option>
-        <option value="Caroll">Caroll</option>
-        <option value="Catoosa">Catoosa</option>
-        <option value="Clayton">Clayton</option>
-        <option value="Cobb">Cobb</option>
     </select>
-    <button>Fetch</button>
+    <a id="changeLink" href="http://" target="_blank">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference Inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for Output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the Inputfield
+            const newUrl = countyLink.ariaValueMax
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        });
+    </script>
+    <a href="">Control Link</a>
     </div>
 </body>
 </html>
