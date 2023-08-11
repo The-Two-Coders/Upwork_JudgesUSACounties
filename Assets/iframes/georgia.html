@@ -41,13 +41,13 @@
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
     <select class="dropdown" name="calicounties" id="counties">
         <option value="" selected>Georgia Counties:</option>
-        <option value="Appling">Appling</option>
-        <option value="Balwin">Balwin</option>
-        <option value="Bank">Bank</option>
-        <option value="Barrow">Barrow</option>
-        <option value="Bartow">Bartow</option>
-        <option value="Bibb">Bibb</option>
-        <option value="Bleckley">Bleckley</option>
+        <option value="./../pages/georgia/athens.html">Athens</option>
+        <option value="./../pages/georgia/atlanta.html">Atlanta</option>
+        <option value="./../pages/georgia/augusta.html">Augusta</option>
+        <option value="./../pages/georgia/columbus.html">Columbus</option>
+        <option value="./../pages/georgia/macon.html">Macon</option>
+        <option value="./../pages/georgia/roswell.html">Roswell</option>
+        <option value="./../pages/georgia/savannah.html">Savannah</option>
     </select>
     <a id="changeLink" href="http://" target="_blank">
         <button>Fetch</button>
@@ -60,13 +60,14 @@
         // Listen for Output changes
         countyLink.addEventListener('input', function(){
             // Get the value of the Inputfield
-            const newUrl = countyLink.ariaValueMax
+            const newUrl = countyLink.value;
 
             // Update the href attribute of the link
             changeLink.href = newUrl
         });
     </script>
-    <a href="">Control Link</a>
+    <a href="./../pages/georgia/athens.html">Control Link</a>
+    <!-- ./../pages/florida/alameda.html" -->
     </div>
 </body>
 </html>

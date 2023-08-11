@@ -41,13 +41,13 @@
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
     <select class="dropdown" name="calicounties" id="counties">
         <option value="" selected>New York Counties:</option>
-        <option value="Cayga">Cayga</option>
-        <option value="Chautauqua">Chautauqua</option>
-        <option value="Chemung">Chemung</option>
-        <option value="Chenago">Chenago</option>
-        <option value="Clinton">Clinton</option>
-        <option value="Columbia">Columbia</option>
-        <option value="New York">New York</option>
+        <option value="Cayga">Bronx</option>
+        <option value="Chautauqua">Brooklyn</option>
+        <option value="Chemung">Manhattan</option>
+        <option value="Chenago">Nassau</option>
+        <option value="Clinton">Queens</option>
+        <option value="Columbia">Staten Island</option>
+        <option value="New York">Suffolk</option>
     </select>
     <a id="changeLink" href="http://" target="_blank">
         <button>Fetch</button>
@@ -60,7 +60,7 @@
         // Listen for Output changes
         countyLink.addEventListener('input', function(){
             // Get the value of the Inputfield
-            const newUrl = countyLink.ariaValueMax
+            const newUrl = countyLink.value;
 
             // Update the href attribute of the link
             changeLink.href = newUrl

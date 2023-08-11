@@ -41,15 +41,15 @@
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
     <select id="countyLink" class="dropdown" name="calicounties">
         <option value="" selected>Colorado Counties:</option>
-        <option value="Adams">Adams</option>
-        <option value="Araphoe">Araphoe</option>
-        <option value="Baca">Baca</option>
-        <option value="Bent">Bent</option>
-        <option value="Broomfield">Broomfield</option>
-        <option value="Chaffee">Chaffee</option>
-        <option value="Cheyenne">Clear Creek</option>
+        <option value="./../pages/colorada/Adams.html">Adams</option>
+        <option value="./../pages/colorada/Araphoe.html">Araphoe</option>
+        <option value="./../pages/colorada/Baca.html">Baca</option>
+        <option value="./../pages/colorada/Bent.html">Bent</option>
+        <option value="./../pages/colorada/Broomfield.html">Broomfield</option>
+        <option value="./../pages/colorada/Chaffee.html">Chaffee</option>
+        <option value="./../pages/colorada/ClearCreek.html">Clear Creek</option>
     </select>
-    <a id="changeLink" href="http://" target="_blank">
+    <a id="changeLink" href="./../../index.html" target="_blank">
         <button>Fetch</button>
     </a>
     <script>
@@ -60,13 +60,14 @@
         // Listen for Output changes
         countyLink.addEventListener('input', function(){
             // Get the value of the Inputfield
-            const newUrl = countyLink.ariaValueMax
+            const newUrl = countyLink.value
 
             // Update the href attribute of the link
             changeLink.href = newUrl
         });
     </script>
-    <a href="">Control Link</a>
+    <!-- <a href="./../pages/colorada/ClearCreek.html">Control Link</a> -->
+    <!-- ./../pages/california/alameda.html -->
     </div>
 </body>
 </html>
