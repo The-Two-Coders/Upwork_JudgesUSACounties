@@ -35,11 +35,19 @@ body {
     border-radius: 15px 15px 0px 0px;
 }
 
+.gavel img{
+    float: left;
+    width: 100px;
+    padding: 10px 20px;
+    z-index: 8;
+    display: block;
+}
+
 .gavel h1 {
     color: rgb(231, 208, 208);
     justify-content: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     padding-top: 2%;
     font-family: Times New Roman;
     font-size: 4em;
@@ -107,8 +115,14 @@ body {
 
 
  iframe {
-    height: 300px;
+    height: 500px;
     width: 69%;
     
+ }
+
+ .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: black;
  }
  

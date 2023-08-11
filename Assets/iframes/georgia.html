@@ -39,25 +39,34 @@
     <h1>Georgia Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select class="dropdown" name="calicounties" id="counties">
+    <select id="countyLink" class="dropdown" name="calicounties">
         <option value="" selected>Georgia Counties:</option>
-        <option value="Appling">Appling</option>
-        <option value="Balwin">Balwin</option>
-        <option value="Bank">Bank</option>
-        <option value="Barrow">Barrow</option>
-        <option value="Bartow">Bartow</option>
-        <option value="Bibb">Bibb</option>
-        <option value="Bleckley">Bleckley</option>
-        <option value="Bulloch">Bulloch</option>
-        <option value="Butts">Butts</option>
-        <option value="Calhoun">Calhoun</option>
-        <option value="Camden">Camden</option>
-        <option value="Caroll">Caroll</option>
-        <option value="Catoosa">Catoosa</option>
-        <option value="Clayton">Clayton</option>
-        <option value="Cobb">Cobb</option>
+        <option value="./../pages/georgia/athens.html">Athens</option>
+        <option value="./../pages/georgia/atlanta.html">Atlanta</option>
+        <option value="./../pages/georgia/augusta.html">Augusta</option>
+        <option value="./../pages/georgia/columbus.html">Columbus</option>
+        <option value="./../pages/georgia/macon.html">Macon</option>
+        <option value="./../pages/georgia/roswell.html">Roswell</option>
+        <option value="./../pages/georgia/savannah.html">Savannah</option>
     </select>
-    <button>Fetch</button>
+    <a id="changeLink" href="http://" target="_blank">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference Inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for Output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the Inputfield
+            const newUrl = countyLink.value;
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        });
+    </script>
+    <a href="./../pages/georgia/athens.html">Control Link</a>
     </div>
 </body>
 </html>

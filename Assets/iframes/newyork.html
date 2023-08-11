@@ -39,26 +39,34 @@
     <h1>New York Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select class="dropdown" name="calicounties" id="counties">
+    <select id="countyLink" class="dropdown" name="calicounties">
         <option value="" selected>New York Counties:</option>
-        <option value="Cayga">Cayga</option>
-        <option value="Chautauqua">Chautauqua</option>
-        <option value="Chemung">Chemung</option>
-        <option value="Chenago">Chenago</option>
-        <option value="Clinton">Clinton</option>
-        <option value="Columbia">Columbia</option>
-        <option value="Cortland">Cortland</option>
-        <option value="Delaware">Delaware</option>
-        <option value="Dutchess">Dutchess</option>
-        <option value="Erie">Erie</option>
-        <option value="Essex">Essex</option>
-        <option value="Franklin">Franklin</option>
-        <option value="Fulton">Fulton</option>
-        <option value="Monroe">Monroe</option>
-        <option value="Nassau">Nassau</option>
-        <option value="New York">New York</option>
+        <option value="./../pages/new york/bronx.html">Bronx</option>
+        <option value="./../pages/new york/brooklyn.html">Brooklyn</option>
+        <option value="./../pages/new york/manhattan.html">Manhattan</option>
+        <option value="./../pages/new york/nassau.html">Nassau</option>
+        <option value="./../pages/new york/queens.html">Queens</option>
+        <option value="./../pages/new york/statenisland.html">Staten Island</option>
+        <option value="New ./../pages/new york/suffolk.html">Suffolk</option>
     </select>
-    <button>Fetch</button>
+    <a id="changeLink" href="http://" target="_blank">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference Inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for Output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the Inputfield
+            const newUrl = countyLink.value;
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        });
+    </script>
+    <!-- <a href="./../pages/new york/bronx.html">Control Link</a> -->
     </div>
 </body>
 </html>

@@ -39,25 +39,35 @@
     <h1>Colorado Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select class="dropdown" name="calicounties" id="counties">
+    <select id="countyLink" class="dropdown" name="calicounties">
         <option value="" selected>Colorado Counties:</option>
-        <option value="Adams">Adams</option>
-        <option value="Araphoe">Araphoe</option>
-        <option value="Baca">Baca</option>
-        <option value="Bent">Bent</option>
-        <option value="Broomfield">Broomfield</option>
-        <option value="Chaffee">Chaffee</option>
-        <option value="Cheyenne">Clear Creek</option>
-        <option value="Conejos">Conejos</option>
-        <option value="Conejos">Conejos</option>
-        <option value="Crowley">Crowley</option>
-        <option value="Delta">Denver</option>
-        <option value="Dolores">Dolores</option>
-        <option value="Eagle">Eagle</option>
-        <option value="El Paso">El Paso</option>
-        <option value="Fremont">Fremont</option>
+        <option value="./../pages/colorada/Adams.html">Adams</option>
+        <option value="./../pages/colorada/Araphoe.html">Araphoe</option>
+        <option value="./../pages/colorada/Baca.html">Baca</option>
+        <option value="./../pages/colorada/Bent.html">Bent</option>
+        <option value="./../pages/colorada/Broomfield.html">Broomfield</option>
+        <option value="./../pages/colorada/Chaffee.html">Chaffee</option>
+        <option value="./../pages/colorada/ClearCreek.html">Clear Creek</option>
     </select>
-    <button>Fetch</button>
+    <a id="changeLink" href="./../../index.html" target="_blank">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference Inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for Output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the Inputfield
+            const newUrl = countyLink.value
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        });
+    </script>
+    <!-- <a href="./../pages/colorada/ClearCreek.html">Control Link</a> -->
+    <!-- ./../pages/california/alameda.html -->
     </div>
 </body>
 </html>
