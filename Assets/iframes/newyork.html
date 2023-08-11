@@ -39,15 +39,15 @@
     <h1>New York Counties</h1>
     <div class="content">
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
-    <select class="dropdown" name="calicounties" id="counties">
+    <select id="countyLink" class="dropdown" name="calicounties">
         <option value="" selected>New York Counties:</option>
-        <option value="Cayga">Bronx</option>
-        <option value="Chautauqua">Brooklyn</option>
-        <option value="Chemung">Manhattan</option>
-        <option value="Chenago">Nassau</option>
-        <option value="Clinton">Queens</option>
-        <option value="Columbia">Staten Island</option>
-        <option value="New York">Suffolk</option>
+        <option value="./../pages/new york/bronx.html">Bronx</option>
+        <option value="./../pages/new york/brooklyn.html">Brooklyn</option>
+        <option value="./../pages/new york/manhattan.html">Manhattan</option>
+        <option value="./../pages/new york/nassau.html">Nassau</option>
+        <option value="./../pages/new york/queens.html">Queens</option>
+        <option value="./../pages/new york/statenisland.html">Staten Island</option>
+        <option value="New ./../pages/new york/suffolk.html">Suffolk</option>
     </select>
     <a id="changeLink" href="http://" target="_blank">
         <button>Fetch</button>
@@ -66,7 +66,7 @@
             changeLink.href = newUrl
         });
     </script>
-    <a href="">Control Link</a>
+    <!-- <a href="./../pages/new york/bronx.html">Control Link</a> -->
     </div>
 </body>
 </html>
