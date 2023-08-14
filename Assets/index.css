@@ -111,6 +111,8 @@ body {
     display: block;
     background-color: rgba(73, 63, 63, 0.479);
     cursor: pointer;
+    border-radius: 15px;
+    border: none;
  }
 
 
@@ -124,5 +126,13 @@ body {
     width: 60px;
     height: 60px;
     background-color: black;
+ }
+
+ .active{
+    background-color: #04AA6D;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
  }
  
