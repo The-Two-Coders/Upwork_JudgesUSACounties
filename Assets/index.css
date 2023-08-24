@@ -9,11 +9,13 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    /* background: linear-gradient(to right, #931da8, #04579b), url(./Images/usa\ flag.jpg); */
     background: url(./Images/usa\ flag.jpg);
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main {
@@ -22,8 +24,7 @@ body {
     background: rgba(235, 214, 214, 0.753);
     border-radius: 15px;
     position: relative;
-    top: 5%;
-    left: 7%;
+    
 }
 
 .gavel {
@@ -34,24 +35,22 @@ body {
     /* background-attachment: fixed; */
     background-color: black;
     border-radius: 15px 15px 0px 0px;
-}
-
-.gavel img{
-    float: left;
-    width: 100px;
-    padding: 10px 20px;
-    z-index: 8;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 208, 208);
+    text-shadow: 4px 1px 3px green;
 }
 
 .gavel h1 {
-    color: rgb(231, 208, 208);
+    /* color: rgb(231, 208, 208);
     justify-content: center;
     text-align: center;
     /* position: relative; */
     padding-top: 2%;
     font-family: Times New Roman;
-    font-size: 4em;
+    font-size: 4em; */
 }
 
 .section {
@@ -163,3 +162,16 @@ body {
  i {
     font-size: 30px;
  }
+
+ /* **** TABLET RESPONSIVE  max-width: 768px ***** */
+
+ @media only screen and (max-width:769px){
+
+ }
+
+
+/* **** Mobile RESPONSIVE  max-width: 500px ***** */
+
+@media only screen and (max-width:500pxpx){
+
+}
