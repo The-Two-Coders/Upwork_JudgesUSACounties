@@ -163,13 +163,13 @@ body {
     background-color: black;
  }
 
- .active{
+ /* .active{
     background-color: #0bda8ea6;
     color: whitesmoke;
     border-radius: 20px;
     border: none;
     font-weight: bolder;
- }
+ } */
  
  footer{
     background-color: rgba(26, 3, 3, 0.466);
@@ -285,6 +285,14 @@ body {
         background-color: rgba(73, 63, 63, 0.479);
         cursor: pointer;       
     }
+
+    .list-items:active {
+        background-color: #0bda8ea6;
+        color: whitesmoke;
+        border-radius: 20px;
+        border: none;
+        font-weight: bolder;
+    }
     
     .list-items:last-child{
         padding-bottom: 20px;
@@ -346,13 +354,13 @@ body {
         background-color: black;
      }
     
-     .active{
+     /* .active{
         background-color: #0bda8ea6;
         color: whitesmoke;
         border-radius: 20px;
         border: none;
         font-weight: bolder;
-     }
+     } */
      
      footer{
         background-color: rgba(26, 3, 3, 0.466);
