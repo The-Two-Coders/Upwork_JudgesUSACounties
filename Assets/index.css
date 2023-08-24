@@ -72,9 +72,10 @@ body {
     height: 100%;
 }
 
-/* Customize scroll bar styles */
+/* *** Customize scroll bar styles *** */
+
 .navList::-webkit-scrollbar {
-    width: 8px;/* Set the width of the scrollbar */
+    width: 7px;/* Set the width of the scrollbar */
 }
 
 .navList::-webkit-scrollbar-track {
@@ -85,11 +86,12 @@ body {
     background: #8a8181; /* Color of the scrollbar thub */
     border-radius: 10px;/* Round the corners of the thumb */
 }
+/* ****End of Scroll Bar Customization */
 
 .list-items {
     padding: 15px 15px;
     font-size: 20px;
-    border-bottom: 1px solid rgb(104, 96, 96);
+    border-bottom: 2px solid rgb(219, 202, 202);
 }
 
 .list-items:hover:not(.active){
@@ -275,7 +277,7 @@ body {
     .list-items {
         padding: 15px 5px;
         font-size: 19px;
-        border-bottom: 1px solid rgb(104, 96, 96);
+        border-bottom: 2px solid rgb(219, 202, 202);
     }
     
     .list-items:hover:not(.active){
@@ -285,7 +287,7 @@ body {
     }
     
     .list-items:last-child{
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         border-bottom: none;
     }
     
@@ -334,13 +336,8 @@ body {
     
     
      iframe {
-        height: inherit;
+        height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
      }
     
      .avatar {

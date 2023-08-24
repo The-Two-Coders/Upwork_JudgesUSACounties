@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-    var navLinks = document.querySelectorAll(".list-items");
+    var navLinks = document.querySelectorAll(".navList div");
 
     navLinks = forEach(function(link){
         link.addEventListener('click',function(event){
@@ -16,20 +16,6 @@ document.addEventListener("DOMContentLoaded",function(){
         });
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ******* original JS Below ****************
 
