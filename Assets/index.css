@@ -20,7 +20,7 @@ body {
 
 .main {
     width: 85%;
-    height: 90vh;
+    height: 95%;
     background: rgba(235, 214, 214, 0.753);
     border-radius: 15px;
     position: relative;
@@ -29,7 +29,7 @@ body {
 
 .gavel {
     width: 100%;
-    height: 20vh;
+    height: 15%;
     background: url(./Images/gavel.jpg);
     background-size: cover;
     /* background-attachment: fixed; */
@@ -41,49 +41,40 @@ body {
     justify-content: center;
     color: rgb(231, 208, 208);
     text-shadow: 4px 1px 3px green;
+    font-size: 2.5vw;
 }
 
 .gavel h1 {
-    /* color: rgb(231, 208, 208);
-    justify-content: center;
-    text-align: center;
-    /* position: relative; */
-    padding-top: 2%;
     font-family: Times New Roman;
-    font-size: 4em; */
 }
 
 .section {
-    /* background-color: black; */
     position: relative;
     width: 100%;
-    height: 65vh;
+    height: 80%;
     border-radius: 0px 0px 15px 15px;
-    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.section .nav {
-    float: left;
-    /* background-color: blue; */
-    width: 30%;
-    height: 65vh;
+.nav {
+    width: 20%;
+    height: 100%;
     border-radius: 0px 0px 0px 15px;
     /* position: relative; */
     /* border: 1px solid black; */
     border-right: 10px solid rgba(73, 63, 63, 0.479);
-    z-index: 1;
 }
 
-.section .content {
-    /* float: right; */
-    /* background-color: black; */
-    width: 100%;
-    height: 70vh;
+.content {
+    width: 80%;
+    height: 100%;
     border-radius: 0px 0px 15px 0px;
     /* position: relative; */
     justify-content: center;
     justify-items: center;
-    z-index: 1;
 }
 
 
@@ -142,25 +133,21 @@ body {
  footer{
     background-color: rgba(26, 3, 3, 0.466);
     width: 100%;
-    height: 5vh;
+    height: 5%;
     z-index: 2;
-    color: white;
+    color: rgb(216, 206, 206);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px; /* Play with this */
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20%;
     border-radius: 0px 0px 15px 15px;
  }
 
- footer p {
-    color: rgb(216, 206, 206);
+ footer i {
     font-size: 20px;
-    font-weight: bold;
-    padding-top: 5px;
-    text-emphasis: ;
- }
-
- i {
-    font-size: 30px;
  }
 
  /* **** TABLET RESPONSIVE  max-width: 768px ***** */
