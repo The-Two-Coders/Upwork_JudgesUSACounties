@@ -74,8 +74,16 @@ body {
 
 .list-items {
     padding: 15px 15px;
-    font-size: 25px;
+    font-size: 20px;
     border-bottom: 1px solid rgb(104, 96, 96);
+}
+
+.list-items:hover:not(.active){
+    display: block;
+    background-color: rgba(73, 63, 63, 0.479);
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
 }
 
 .list-items:last-child{
@@ -115,12 +123,13 @@ body {
     color: black;
 }
 
- li:hover:not(.active) {
+ li:hover:not(active) {
     display: block;
     background-color: rgba(73, 63, 63, 0.479);
     cursor: pointer;
     border-radius: 15px;
     border: none;
+    color: whitesmoke;
  }
 
 
