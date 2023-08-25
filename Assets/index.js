@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
     var navLinks = document.querySelectorAll(".navList div");
 
-    navLinks = forEach(function(link){
+    navLinks.forEach(function(link){
         link.addEventListener('click',function(event){
             event.preventDefault(); // Prevent the default link behavior
 

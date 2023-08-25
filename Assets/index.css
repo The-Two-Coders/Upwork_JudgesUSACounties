@@ -141,14 +141,14 @@ body {
     color: black;
 }
 
- li:hover:not(active) {
+ /* li:hover:not(active) {
     display: block;
     background-color: rgba(73, 63, 63, 0.479);
     cursor: pointer;
     border-radius: 15px;
     border: none;
     color: whitesmoke;
- }
+ } */
 
 
  iframe {
@@ -163,14 +163,22 @@ body {
     background-color: black;
  }
 
- /* .active{
+ .active{
     background-color: #0bda8ea6;
     color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     font-weight: bolder;
- } */
- 
+    display: block;
+    cursor: pointer;
+ }
+ /* display: block;
+    background-color: rgba(73, 63, 63, 0.479);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bolder; */
  footer{
     background-color: rgba(26, 3, 3, 0.466);
     width: 100%;
