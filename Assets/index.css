@@ -40,7 +40,7 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(231, 208, 208);
-    text-shadow: 4px 1px 3px green;
+    text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
     font-size: 2.5vw;
 }
 
@@ -132,24 +132,11 @@ body {
     font-weight: 549;
 }
 
-/* .section .nav ul li:hover {
-    background-color: rgba(73, 63, 63, 0.479);
-} */
 
 .section .nav ul li a {
     text-decoration: none;
     color: black;
 }
-
- /* li:hover:not(active) {
-    display: block;
-    background-color: rgba(73, 63, 63, 0.479);
-    cursor: pointer;
-    border-radius: 15px;
-    border: none;
-    color: whitesmoke;
- } */
-
 
  iframe {
     height: 500px;
@@ -196,7 +183,15 @@ body {
  }
 
  footer i {
-    font-size: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+ }
+
+ footer i:hover {
+    color: white;
+    transition: 0.3s;
+    font-size: 32px;
  }
 
  /* **** TABLET RESPONSIVE  max-width: 768px ***** */
@@ -244,12 +239,13 @@ body {
         align-items: center;
         justify-content: center;
         color: rgb(231, 208, 208);
-        text-shadow: 4px 1px 3px green;
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
         font-size: 2.5vw;
     }
     
     .gavel h1 {
         font-family: Times New Roman;
+        
     }
     
     .section {
@@ -294,14 +290,14 @@ body {
         cursor: pointer;       
     }
 
-    .list-items:active {
+    /* .list-items:active {
         background-color: #0bda8ea6;
         color: whitesmoke;
         border-radius: 20px;
         border: none;
         font-weight: bolder;
     }
-    
+     */
     .list-items:last-child{
         padding-bottom: 20px;
         border-bottom: none;
@@ -341,34 +337,36 @@ body {
         color: black;
     }
     
-     li:hover:not(active) {
+    li:hover:not(active) {
         display: block;
         background-color: rgba(73, 63, 63, 0.479);
         cursor: pointer;
-        border-radius: 15px;
+        border-radius: 55px;
         border: none;
         color: whitesmoke;
      }
     
     
-     iframe {
+    iframe {
         height: 100%;
         width: 100%;
      }
     
-     .avatar {
+    .avatar {
         width: 60px;
         height: 60px;
         background-color: black;
      }
     
-     /* .active{
+    .active{
         background-color: #0bda8ea6;
         color: whitesmoke;
-        border-radius: 20px;
+        border-radius: 5px;
         border: none;
         font-weight: bolder;
-     } */
+        display: block;
+        cursor: pointer;
+     }
      
      footer{
         background-color: rgba(26, 3, 3, 0.466);
@@ -382,18 +380,238 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20%;
+        gap: 8%;
+        border-radius: 0px 0px 15px 15px;
+     }
+    
+     footer i {
+        font-size: 23px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
+     }
+ footer i:hover {
+    color: white;
+    transition: 0.9s;
+    font-size: 28px;
+ }
+
+
+
+
+
+ /* **** Mobile RESPONSIVE  max-width: 500px ***** */
+
+@media only screen and (max-width:500px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        position: static;
+        overflow: hidden;
+        background: url(./Images/usa\ flag\ mobile\ background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .main {
+        margin-top: 5%;
+        width: 90%;
+        height: 95%;
+        background: rgba(235, 214, 214, 0.753);
+        border-radius: 15px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        /* gap: 0%; */
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .gavel {
+        width: 100%;
+        height: 10%;
+        background: url(./Images/gavel.jpg);
+        background-size: cover;
+        /* background-attachment: fixed; */
+        /* background-color: black; */
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 2.5vw;
+    }
+    
+    .gavel h1 {
+        font-family: Times New Roman;
+        font-size: 35px;
+    }
+    
+    .section {
+        position: relative;
+        width: 100%;
+        height: 85%;
+        border-radius: 0px 0px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+    
+    .nav {
+        width: 100%;
+        height: 20%;
+        /* border-right: 10px solid rgba(73, 63, 63, 0.479); */
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* background-color: black; */
+    }
+
+    .stateDiv {
+        padding: 10%;
+        /* background-color: rgba(73, 63, 63, 0.479); */
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        background-color: yellow;
+    }
+    
+    
+    .navList {
+        overflow-x: scroll;
+        height: 100%;
+        width: 80%;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: center; */
+        background-color: pink;
+    }
+    
+    /* *** Customize scroll bar styles *** */
+    
+    .navList::-webkit-scrollbar {
+        height: 4px;/* Set the width of the scrollbar
+    }
+    
+    /* .navList::-webkit-scrollbar-track { */
+        background: #f1f1f1;/* Color of the track */
+    }
+    
+    .navList::-webkit-scrollbar-thumb {
+        background: #8a8181; /* Color of the scrollbar thub */
+        border-radius: 1px;/* Round the corners of the thumb */
+    } */
+    /* ****End of Scroll Bar Customization */
+    
+    .list-items {
+        padding: 15px 15px;
+        font-size: 18px;
+        border-right: 1px solid rgb(238, 147, 147);
+        display: inline-block;
+    }
+    
+    .list-items:hover:not(.active){
+        display: inline-block;
+        background-color: rgba(73, 63, 63, 0.479);
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    
+    .list-items:last-child{
+        /* padding-bottom: 25px; */
+        border-bottom: none;
+    }
+    
+    .content {
+        background-color: blue;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    
+
+    
+     iframe {
+        height: 500px;
+        width: 69%;
+        
+     }
+    
+     .avatar {
+        width: 60px;
+        height: 60px;
+        background-color: black;
+     }
+    
+     .active{
+        background-color: #0bda8ea6;
+        color: whitesmoke;
+        border-radius: 15px;
+        border: none;
+        font-weight: bolder;
+        display: block;
+        cursor: pointer;
+     }
+     /* display: block;
+        background-color: rgba(73, 63, 63, 0.479);
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        color: whitesmoke;
+        font-weight: bolder; */
+     footer{
+        background-color: rgba(26, 3, 3, 0.466);
+        width: 100%;
+        height: 5%;
+        z-index: 2;
+        color: rgb(216, 206, 206);
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px; /* Play with this */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
         border-radius: 0px 0px 15px 15px;
      }
     
      footer i {
         font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
      }
- }
-
-
-/* **** Mobile RESPONSIVE  max-width: 500px ***** */
-
-@media only screen and (max-width:500pxpx){
-
+     footer i:hover {
+        color: white;
+        transition: 0.9s;
+        font-size: 25px;
+     }
 }
