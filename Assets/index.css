@@ -463,7 +463,7 @@ body {
     .section {
         position: relative;
         width: 100%;
-        height: 85%;
+        height: 90%;
         border-radius: 0px 0px 15px 15px;
         display: flex;
         flex-direction: column;
@@ -474,8 +474,7 @@ body {
     
     .nav {
         width: 100%;
-        height: 20%;
-        /* border-right: 10px solid rgba(73, 63, 63, 0.479); */
+        height: 10%;
         overflow: hidden;
         display: flex;
         flex-direction: row;
@@ -484,9 +483,15 @@ body {
         /* background-color: black; */
     }
 
+    .content {
+        /* background-color: blue; */
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+        justify-items: center;
+    }
+
     .stateDiv {
-        padding: 10%;
-        /* background-color: rgba(73, 63, 63, 0.479); */
         width: 20%;
         height: 100%;
         display: flex;
@@ -495,7 +500,7 @@ body {
         justify-content: center;
         color: white;
         font-size: 18px;
-        background-color: yellow;
+        background-color: rgba(73, 63, 63, 0.479);
     }
     
     
@@ -509,6 +514,13 @@ body {
         align-items: center;
         /* justify-content: center; */
         background-color: pink;
+    }
+
+    .list-items {
+        padding: 15px 15px;
+        font-size: 18px;
+        border-right: 1px solid rgb(238, 147, 147);
+        display: inline-block;
     }
     
     /* *** Customize scroll bar styles *** */
@@ -527,12 +539,7 @@ body {
     } */
     /* ****End of Scroll Bar Customization */
     
-    .list-items {
-        padding: 15px 15px;
-        font-size: 18px;
-        border-right: 1px solid rgb(238, 147, 147);
-        display: inline-block;
-    }
+    
     
     .list-items:hover:not(.active){
         display: inline-block;
@@ -548,17 +555,6 @@ body {
         /* padding-bottom: 25px; */
         border-bottom: none;
     }
-    
-    .content {
-        background-color: blue;
-        width: 100%;
-        height: 70%;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    
-
     
      iframe {
         height: 500px;
@@ -581,14 +577,8 @@ body {
         display: block;
         cursor: pointer;
      }
-     /* display: block;
-        background-color: rgba(73, 63, 63, 0.479);
-        cursor: pointer;
-        border-radius: 5px;
-        border: none;
-        color: whitesmoke;
-        font-weight: bolder; */
-     footer{
+     
+    footer {
         background-color: rgba(26, 3, 3, 0.466);
         width: 100%;
         height: 5%;
