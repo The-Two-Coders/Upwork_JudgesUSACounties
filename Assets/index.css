@@ -511,16 +511,19 @@ body {
         white-space: nowrap;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
         /* justify-content: center; */
-        background-color: pink;
+        /* background-color: pink; */
     }
 
     .list-items {
         padding: 15px 15px;
         font-size: 18px;
         border-right: 1px solid rgb(238, 147, 147);
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     
     /* *** Customize scroll bar styles *** */
@@ -534,8 +537,8 @@ body {
     }
     
     .navList::-webkit-scrollbar-thumb {
-        background: #8a8181; /* Color of the scrollbar thub */
-        border-radius: 1px;/* Round the corners of the thumb */
+        background: #8a1717; /* Color of the scrollbar thub */
+        border-radius: 100px;/* Round the corners of the thumb */
     } */
     /* ****End of Scroll Bar Customization */
     
