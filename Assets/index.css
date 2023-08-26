@@ -70,6 +70,8 @@ body {
 .navList {
     overflow-y: scroll;
     height: 100%;
+    border-top: 6px solid rgba(0, 0, 0, 0.329);
+    border-radius: 10px 10px 0px 0px;
 }
 
 /* *** Customize scroll bar styles *** */
@@ -89,7 +91,7 @@ body {
 /* ****End of Scroll Bar Customization */
 
 .list-items {
-    padding: 15px 15px;
+    padding: 15px 28px;
     font-size: 20px;
     border-bottom: 2px solid rgb(219, 202, 202);
 }
@@ -118,8 +120,8 @@ body {
 }
 
 iframe {
-    height: 500px;
-    width: 69%;    
+    height: 100%;
+    width: 100%;    
  }
 
 .avatar {
@@ -203,7 +205,6 @@ footer i:hover {
         height: 15%;
         background: url(./Images/gavel.jpg);
         background-size: cover;
-        /* background-attachment: fixed; */
         background-color: black;
         border-radius: 15px 15px 0px 0px;
         display: flex;
@@ -246,12 +247,11 @@ footer i:hover {
     .navList {
         overflow-y: scroll;
         height: 100%;
-        /* padding: 1px 1px; */
         font-size: 20px;
     }
     
     .list-items {
-        padding: 15px 5px;
+        padding: 15px 15px;
         font-size: 19px;
         border-bottom: 2px solid rgb(219, 202, 202);
     }
@@ -350,9 +350,6 @@ footer i:hover {
 }
 
 
-
-
-
  /* **** Mobile RESPONSIVE  max-width: 500px ***** */
 
 @media only screen and (max-width:500px){
@@ -434,6 +431,7 @@ footer i:hover {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.329);
     }
 
     .content {
@@ -452,7 +450,7 @@ footer i:hover {
         align-items: center;
         justify-content: center;
         color: white;
-        background-color: rgba(73, 63, 63, 0.479);
+        /* background-color: rgba(73, 63, 63, 0.479); */
     }
     .stateDiv h1 {
         font-size: 18px;
@@ -465,10 +463,14 @@ footer i:hover {
         white-space: nowrap;
         display: flex;
         flex-direction: row;
+        border-top: 0px solid rgba(0, 0, 0, 0.329);
+        border-radius: 10px 0px 0px 10px;
+        border-left: 4px solid rgba(0, 0, 0, 0.329);
+
     }
 
     .list-items {
-        padding: 15px 15px;
+        padding: 5px 15px;
         font-size: 18px;
         border-right: 1px solid rgb(238, 147, 147);
         display: flex;
@@ -554,5 +556,24 @@ footer i:hover {
         color: black;
         transition: 0.9s;
         font-size: 25px;
+    }
+}
+
+/* **** Mobile RESPONSIVE  max-width: 400px ***** */
+@media only screen and (max-width:400px){
+    .stateDiv {
+        width: 20%;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        /* background-color: rgba(73, 63, 63, 0.479); */
+    }
+    .stateDiv h1 {
+        font-size: 15px;
+        /* display: block; */
     }
 }
