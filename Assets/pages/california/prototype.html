@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./pagesCSS.css">
     <link rel="icon" href="./../../Images/favicon.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="./../../index.js"></script>
 </head>
 <body>
     <div class="main">
         <div class="gavel">
             <div class="homeicon">
                 <a href="./../../../index.html">
-                    <img src="./../../Images/homeicon.png" alt="homeicon" width="80px">
+                    <img src="./../../Images/homeicon.png" alt="homeicon" width="80px" title="Homepage">
                 </a>
             </div>
             <div class="countyName">
@@ -23,29 +24,29 @@
         <div class="section">
             <div class="nav">
                 <div class="judges">
-                    <h1>Judges:</h1>
+                    <h1 title="Scroll through Judges names">Judges:</h1>
                 </div>
                 <div class="navList">
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
-                    <div class="list-item">Judge </div>
+                    <div class="list-items" onclick="document.getElementById('frame').src='./support/alameda/stephen.html'">* Stephen M. Pulido</div>
+                    <div class="list-items" onclick="document.getElementById('frame').src='./support/alameda/brad.html'">* Brad Selignman</div>
+                    <div class="list-items" onclick="document.getElementById('frame').src='./support/alameda/elena.html'">* Elena Condes</div>
+                    <div class="list-items" onclick="document.getElementById('frame').src='./support/alameda/rebekah.html'">* Rebekah Evenson</div>
+                    <div class="list-items" onclick="document.getElementById('frame').src='./support/alameda/victoria.html'">* Victoria Kolakowski</div>
+                    <div class="list-items">Judge A</div>
+                    <div class="list-items">Judge B</div>
+                    <div class="list-items">Judge C</div>
+                    <div class="list-items">Judge D</div>
+                    <div class="list-items">Judge E</div>
+                    <div class="list-items">Judge F</div>
+                    <div class="list-items">Judge G</div>
+                    <div class="list-items">Judge H</div>
+                    <div class="list-items">Judge I</div>
+                    <div class="list-items">Judge J</div>
+                    <div class="list-items">Judge K</div>
                 </div>
             </div>
             <div class="content">
-                <iframe src="" frameborder="2"></iframe>
+                <iframe id="frame" src="./support/alameda/landingPage.html" frameborder="0"></iframe>
             </div>
         </div>
         <footer>
