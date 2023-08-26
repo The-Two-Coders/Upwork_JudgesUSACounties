@@ -71,17 +71,17 @@ body {
     overflow-y: scroll;
     height: 100%;
     border-top: 6px solid rgba(0, 0, 0, 0.329);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 /* *** Customize scroll bar styles *** */
 
 .navList::-webkit-scrollbar {
-    width: 7px;/* Set the width of the scrollbar */
+    width: 10px;/* Set the width of the scrollbar */
 }
 
 .navList::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
+    background: #f1f1f117; /* Color of the track */
 }
 
 .navList::-webkit-scrollbar-thumb {
@@ -265,6 +265,22 @@ footer i:hover {
         padding-bottom: 20px;
         border-bottom: none;
     }
+
+    /* *** Customize scroll bar styles *** */
+
+.navList::-webkit-scrollbar {
+    width: 5px;/* Set the width of the scrollbar */
+}
+
+.navList::-webkit-scrollbar-track {
+    background: #f1f1f117; /* Color of the track */
+}
+
+.navList::-webkit-scrollbar-thumb {
+    background: #8a8181; /* Color of the scrollbar thub */
+    border-radius: 10px;/* Round the corners of the thumb */
+}
+/* ****End of Scroll Bar Customization */
     
     .content {
         width: 70%;
@@ -433,6 +449,7 @@ footer i:hover {
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.329);
     }
+    
 
     .content {
         width: 100%;
