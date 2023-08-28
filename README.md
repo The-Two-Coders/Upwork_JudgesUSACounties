@@ -1,4 +1,5 @@
-# Upwork_JudgesUSACounties
+Client's Instructions:
+*****************************
 
 I am working on creating a website for my non-profit foundation. I have already started the site on Godaddy. This is going to be a somewhat complex project with multiple drop down boxes and selections.
 
