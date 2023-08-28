@@ -526,6 +526,10 @@ footer i:hover {
         color: whitesmoke;
         font-weight: bolder;
         padding: 5px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     
     .list-items:last-child{
@@ -533,8 +537,8 @@ footer i:hover {
     }
     
     iframe {
-        height: 500px;
-        width: 69%;
+        height: 100%;
+        width: 100%;
         
     }
     
@@ -553,6 +557,10 @@ footer i:hover {
         font-weight: bolder;
         display: block;
         cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
      
     footer {
